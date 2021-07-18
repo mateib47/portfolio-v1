@@ -24,6 +24,24 @@ h2{
   font-style: italic;
   color: white;
 }
+#projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  margin: 2vw;
+}
+.project-box{
+  max-width: 100%;
+  height: auto;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  background-color: white;
+  margin: 1vw;
+  padding: 2vw;
+  border-radius: 10px;
+}
 #welcome-section{
   background-color: #268EA6;
   display: flex;

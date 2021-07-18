@@ -1,18 +1,38 @@
+body{
+  background-color: #4ECBD9;
+  margin: 0;
+}
 nav{
-  background-color: #565B99;
+  background-color: #0C3640;
   display: flex;
   flex-direction: row;
   justify-content:flex-end;
-  font-size: 1.6vw;
+  font-size: 20px;
 }
 nav a{
   color: white;
   font-style: normal;
   text-decoration: none;
   padding: 1.5vw;
-  font-size:
-}
 
+}
+h1{
+  font-size: 40px;
+  color: white;
+}
+h2{
+  font-style: italic;
+  color: white;
+}
+#welcome-section{
+  background-color: #268EA6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 50%;
+  padding: 15em;
+}
 
 
 @media screen and (max-width: 767px) {

@@ -2,6 +2,11 @@ body{
   background-color: #4ECBD9;
   margin: 0;
 }
+.parent{
+  position: fixed;
+  margin: auto;
+  width: 100%;
+}
 nav{
   background-color: #0C3640;
   display: flex;
@@ -27,7 +32,7 @@ h2{
 #projects{
   display: flex;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center;
   margin: 2vw;
 }
 .project-box{
@@ -48,8 +53,10 @@ h2{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 50%;
-  padding: 15em;
+  height: 100vh;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
 }
 
 

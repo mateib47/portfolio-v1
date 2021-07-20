@@ -7,10 +7,10 @@
   </head>
   <body>
     <div class="parent">
-      <nav>
+      <nav id="navbar">
         <a href="#welcome-section">About</a>
         <a href="#projects-section">Work</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
     <main id="main-doc">
@@ -19,25 +19,28 @@
         <h2>My name is Matei, and this is my personal portofolio web-page</h2>
       </section>
       <section id="projects-section">
+        <!-- TODO: implement some anchor tags with links -->
         <h1>These are some of my projects</h1>
         <div id="projects">
-          <a href="https://mateib47.github.io/aristotle-tribute-page/" target="_blank" id="tribute-page"></a>
-          <div class="project-box">
+          <div class="project-tile" onclick="window.open('https://mateib47.github.io/aristotle-tribute-page/', '_blank');" style="cursor: pointer;">
             <img src="images/tribute-page.png" alt="Tribute-Page Project" class="project-img">
-            <p>Tribute Page</p>
+            <p class="project-text">Tribute Page</p>
           </div>
-          <div class="project-box">
+          <div class="project-tile"  onclick="window.open('https://mateib47.github.io/survey-form/', '_blank');" style="cursor: pointer;">
             <img src="images/survey.png" alt="Survey-form Project" class="project-img">
-            <p>Survey Form</p>
+            <p class="project-text">Survey Form</p>
           </div>
-          <div class="project-box">
+          <div class="project-tile"  onclick="window.open('https://mateib47.github.io/technical-documentation-page/', '_blank');" style="cursor: pointer;">
             <img src="images/documentation-page.png" alt="Documentation-Page Project" class="project-img">
-            <p>Technical Documentation Page</p>
+            <p class="project-text">Technical Documentation Page</p>
           </div>
-          <div class="project-box">
+          <div class="project-tile"  onclick="window.open('https://mateib47.github.io/product-landing-page/', '_blank');" style="cursor: pointer;">
             <img src="images/product-page.png" alt="Product-page Project" class="project-img">
-            <p>Product Landing Page</p>
+            <p class="project-text">Product Landing Page</p>
           </div>
+        </div>
+        <div class="show-all">
+          <a href="https://github.com/mateib47?tab=repositories" target="_blank" id="show-all-button">Show all </a>
         </div>
       </section>
     </main>

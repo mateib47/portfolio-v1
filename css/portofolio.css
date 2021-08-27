@@ -11,6 +11,9 @@ body{
   margin: auto;
   width: 100%;
 }
+.contact-tile i{
+  margin-right: 8px;
+}
 nav{
   background-color: #0C3640;
   display: flex;
@@ -129,6 +132,7 @@ h2{
 .contact-tile a{
   color: black;
 }
+/*
 .contact-tile:hover{
   animation-fill-mode: forwards;
   animation-name: move;
@@ -151,6 +155,7 @@ h2{
     margin-top: 0;
   }
 }
+*/ /* FIXME */
 footer{
   background-color: #0C3640;
   height: 10vh;

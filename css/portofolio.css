@@ -1,10 +1,18 @@
 html{
   scroll-behavior: smooth;
-
 }
 body{
   background-color: #4ECBD9;
   margin: 0;
+}
+button{
+  border: none;
+}
+.text{
+  color:white;
+}
+#full-description{
+  display: none;
 }
 .parent{
   position: fixed;
@@ -25,6 +33,7 @@ a{
   color: white;
   font-style: normal;
   text-decoration: none;
+  cursor: pointer;
 }
 nav a{
   padding: 1.5vw;
@@ -54,6 +63,7 @@ nav a{
 h1{
   font-size: 50px;
   color: white;
+  text-align: center;
 }
 h2{
   font-style: italic;
@@ -98,7 +108,7 @@ h2{
 .project-text:hover{
   color: #FD8703;
 }
-#show-all-button{
+.button{
   background-color: #0C3640;
   padding: 20px;
   text-align:center;
@@ -108,7 +118,7 @@ h2{
   transition: 0.5s;
   margin: 15px;
 }
-#show-all-button:hover{
+.button:hover{
   background-color: #A62F03;
 }
 #contact h1{
@@ -128,11 +138,12 @@ h2{
 .contact-list{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 20px 80px;
 }
 .contact-tile a{
   color: black;
+  margin-right: 20px;
 }
 /*
 .contact-tile:hover{

@@ -11,7 +11,13 @@ button{
 .text{
   color:white;
 }
+.padding-text{
+  padding: 20px 90px;
+}
 #full-description{
+  padding:0px 100px;
+}
+#more{
   display: none;
 }
 .parent{

@@ -14,9 +14,6 @@ button{
 .padding-text{
   padding: 20px 90px;
 }
-#full-description{
-  padding:0px 100px;
-}
 #more{
   display: none;
 }
@@ -194,7 +191,7 @@ footer p{
 }
 @media screen and (max-width: 796px) {
   .full-screen{
-    padding: 0;
+    padding: 3em;
   }
   #projects{
     display: flex;

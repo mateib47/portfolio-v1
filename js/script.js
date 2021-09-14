@@ -18,5 +18,18 @@ function hide(elem){
   elem.style.display = 'none';
 }
 function show(elem){
+  console.log(elem);
   elem.style.display = 'block';
+}
+window.onclick = function(event){
+  let modals = document.getElementsByClassName("modal");
+  for(let i=0; i < modals.length; i++){
+    if(event.target == modals[i]){
+      hide(modals[i]);
+    }
+  }
+}
+let menuLinks = document.querySelector("#menu-links").querySelectorAll("a");
+for(let x of menuLinks){
+  x.onclick = function() { hide(document.getElementById('menu')); };
 }

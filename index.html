@@ -3,6 +3,8 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/portofolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fuggles">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Matei's Portofolio</title>
     <link rel="icon" href="images/tab-logo.PNG">
@@ -10,10 +12,24 @@
   <body>
     <div class="parent">
       <nav id="navbar">
-        <a href="#welcome-section">About</a>
-        <a href="#projects-section">Work</a>
-        <a href="#contact">Contact</a>
+        <p class="nav-title">Matei Bucur</p>
+        <div class="links" id="navbar-links">
+          <a href="#welcome-section">About</a>
+          <a href="#projects-section">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <i class="fa fa-bars" id="bars-menu" onclick="show(document.getElementById('menu'))"></i>
       </nav>
+    </div>
+    <div class="modal" id="menu">
+      <div class="modal-content">
+        <span class="close" onclick="hide(document.getElementById('menu'))">&times;</span>
+        <div class="links-mobile links" id="menu-links">
+          <a href="#welcome-section">About</a>
+          <a href="#projects-section">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </div>
     <main id="main-doc">
       <section id="welcome-section" class="dark-blue full-screen center">
@@ -24,12 +40,16 @@ Now, for me it is important to continue doing more than needed. I know that goin
 Finally, my aim is to become a high-performance person that is capable of handling large amounts of work because my life’s goal is to have a great positive impact on society and the world.</span></p>
         <a id="show-more-button">Show more &#9660;</a>
       </section>
-      <section id="projects-section">
+      <section id="projects-section" class="full-screen-no-height">
         <h1>These are some of my projects</h1>
         <div id="projects">
           <div class="project-tile"  onclick="window.open('https://mateib47.github.io/book-list-project/', '_blank');" style="cursor: pointer;">
             <img src="images/book-list.PNG" alt="Book List Project" class="project-img">
             <p class="project-text">Book List</p>
+          </div>
+          <div class="project-tile"  onclick="window.open('https://mateib47.github.io/baby-things-landing-page/#welcome', '_blank');" style="cursor: pointer;">
+            <img src="images/baby-things.PNG" alt="Baby things Project" class="project-img">
+            <p class="project-text">Online shop page</p>
           </div>
           <div class="project-tile"  onclick="window.open('https://mateib47.github.io/Ethereal-Chalet/', '_blank');" style="cursor: pointer;">
             <img src="images/guest-house-page.PNG" alt="Guest house Project" class="project-img">

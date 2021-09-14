@@ -14,6 +14,18 @@ button{
 .padding-text{
   padding: 20px 90px;
 }
+#bars-menu{
+  color: white;
+  display: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.nav-title{
+  font-family: 'Fuggles';
+  font-size: 50px;
+  color:white;
+  margin: 20px 30px;;
+}
 #more{
   display: none;
 }
@@ -29,7 +41,8 @@ nav{
   background-color: #0C3640;
   display: flex;
   flex-direction: row;
-  justify-content:flex-end;
+  justify-content:space-between;
+  align-items: center;
   font-size: 20px;
 }
 a{
@@ -43,6 +56,11 @@ nav a{
 }
 .full-screen{
   height: 100vh;
+  max-width: 100%;
+  padding:5em;
+}
+.full-screen-no-height{
+  height: auto;
   max-width: 100%;
   padding:5em;
 }
@@ -134,6 +152,7 @@ h2{
 .contact-tile{
   display: flex;
   flex-direction: row-reverse;
+  text-align: center;
   font-size: 25px;
   animation-name: reverse;
   animation-duration: 500ms;
@@ -147,6 +166,34 @@ h2{
 .contact-tile a{
   color: black;
   margin-right: 20px;
+}
+.links-mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+.links-mobile a{
+  padding-bottom: 15px;
+}
+.modal {
+  padding-top:4vh;
+  top:0;
+  left:0;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  overflow: scroll;
+}
+.modal-content{
+  background-color: #0C3640;
+  margin: auto;
+  padding:15px;
+  width:50%;
+  border-radius: 10px;
 }
 /*
 .contact-tile:hover{
@@ -184,14 +231,26 @@ footer{
 footer p{
   margin-right: 15px;
 }
+.close{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
 @media screen and (max-width: 1000px) {
   .contact-list{
     margin: 10px 40px;
   }
 }
 @media screen and (max-width: 796px) {
+  .modal-content{
+    width:85%;
+  }
   .full-screen{
     padding: 3em;
+  }
+  .full-screen-no-height{
+    padding: 3em 0em 0em 0em;
   }
   #projects{
     display: flex;
@@ -200,6 +259,7 @@ footer p{
   }
   .project-tile{
     width: 80%;
+    margin-bottom: 20px;
   }
   .contact-list{
     display: flex;
@@ -207,6 +267,17 @@ footer p{
     align-items: center;
   }
   .contact-tile{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  .contact-tile a{
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  #bars-menu{
+    display: block;
+  }
+  #navbar-links{
+    display: none;
   }
 }
